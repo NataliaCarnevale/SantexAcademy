@@ -39,15 +39,14 @@ body {
   
   .logo {
     display: flex;
-    align-items: center;
+    
   }
-  
 
   nav {
     display: flex;
-    justify-content: center;
-  }
   
+  }
+
   .logo img {
     max-width: 100%;
     height: auto;
@@ -57,54 +56,58 @@ body {
   .menu {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
   }
   
+  
   .menu li {
-    margin: 0 10px;
+    margin: 10px 10px;
     font-size: 14px;
   }
   
-  .menu li:first-child {
-    margin-left: 0;
-  }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
   
   .menu li:hover {
     color: #6b53f0;
   }
 
+ 
+  
 .font-icons:hover {
   color: #d153f0;
 }
 
-  .redondo {
-    background-color: white;
-    color: black;
-    border-radius: 25%;
-    padding: 10px 25px;
-    font-size: 14px;
-    border: none;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  }
-  
-  .redondo:hover {
-    background-color: black;
-    color: white;
-  }
+ 
+.redondo {
+  background-color: white;
+  color: black;
+  font-style: bold;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 10px 25px;
+  height: 32px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  align-items: center;
+  width: 140px;
+}
+
+.redondo:hover {
+  background-color: black;
+  color: white;
+}
 
   .r-violeta {
     background-color:#ffffff;
     color: #6b53f0;
+    font-style: bold;
     border-radius: 25px;
     padding: 10px 25px;
     font-size: 14px;
-    border: none;
+    height: 32px;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    align-items: center;
+    text-align: center;
+    width: 140px;
   }
   
   .r-violeta:hover {
@@ -112,28 +115,10 @@ body {
     color:#ffffff;
   }
 
-  .border-purple {
-    border-color: #6b53f0;
-    color: #6b53f0;
-  }
-  
-  .border-black {
-    border-color: black;
-  }
-  
-  #btn-join {
-    height: 3em;
-    width: 8.5em;
-  }
-  
-  #btn-join:hover {
-    background-color: #201b24;
-    color: white;
-  }
-  
+
   
   #introduction {
-    padding-top: 140px;
+    padding-top: 150px;
     padding-bottom: 70px;
   }
   
@@ -143,42 +128,6 @@ body {
     
   }
   
-
-  
-  #impact {
-    background-color: #201b24;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 405px;
-  }
-  
-  #impact-text-1 {
-    font-size: 1.9em;
-    font-weight: bolder;
-    margin: 0.6em 0;
-  }
-  
-  #impact-text-2 {
-    font-size: 0.9em;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-  
-  .impact-col {
-    width: 44%;
-  }
-  
-  #item-3 {
-    width: 50%;
-  }
-  
-  #item-4 {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-  }
   
   .counters-box {
     text-align: center;
@@ -198,49 +147,6 @@ body {
     color: #8c939c;
   }
 
-  #plus {
-    color: #6b53f0;
-    font-size: 2em;
-  }
-  
-  .col {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  
-  
-
-  #impact {
-    background-color: #F8F8F8;
-    padding: 50px 0px;
-  }
-  
-  .counters-row {
-    margin-top: 50px;
-    justify-content: center;
-  }
-  
-  .counters-box {
-    text-align: center;
-    margin: 0 50px;
-  }
-  
-  .counter-number {
-    font-size: 60px;
-    font-weight: 700;
-    color: #2980b9;
-  }
-  
-  .counter-text {
-    color: #8c999c;
-    margin-top: 20px;
-  }
   
   @media screen and (max-width: 600px) {
     .counters-row {
@@ -262,9 +168,6 @@ body {
 
   .fusion-row {
       margin: 0 auto;
-  }
-  .contenedor-todo {
-    height: 100vh;
   }
   
   .counter {
@@ -289,4 +192,52 @@ body {
     #counter-container > div {
       flex-basis: auto;
     }
+  }
+  
+
+  footer {
+    background-color: #201b24;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 12px;
+    }
+  
+  
+  .footer-column h4 {
+    margin: 0;
+  }
+
+  .footer-column img {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  
+  .footer-column p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #c9c4c4;
+    text-align: left;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 5px;
+    text-align: left;
   }

@@ -1,1 +1,1 @@
-Carpeta con index.html y contenedora de las carpetas: css, js e img.
+Carpeta con index.html y contenedora de las carpetas: css e img.
